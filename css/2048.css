@@ -1,0 +1,121 @@
+a{
+	text-decoration: none;
+}
+#my2048{
+	width: 450px;
+	height: 600px;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	font-family: clear sans,helvetica neue,Arial,sans-serif;
+	color: #776E65;
+}
+#title2048{
+	float: left;
+	font-size: 78px;
+	color: #776E65;
+}
+#headScore{
+	margin-left: 50px;
+	float: right;
+	margin-top: 19px;
+}
+#headScore>div{
+	width: 97px;
+	height: 55px;
+	border-radius: 3px;
+	background-color: #BBADA0;
+	float:left;
+	margin-left: 10px;
+	position: relative;
+	text-align: center;
+	line-height: 76px;
+	color: #fff;
+	font-size:25px;
+}
+#headScore>div::after{
+	position: absolute;
+	width: 100%;
+	top: 7px;
+	left: 0px;
+	font-size: 16px;
+	color: #eee4da;
+	text-align: center;
+	line-height: 15px;
+}
+#nowScore::after{
+	content: 'Score';
+}
+#nowScore::before{
+	content: '+4';
+	width: 100%;
+	font-size: 25px;
+	font-weight: 700;
+	color: rgba(128,119,109,.9);
+	position: absolute;
+	text-align: center;
+	left: 0px;
+	transition: 1 ease top;
+	display: none;
+}
+#bestScore::after{content:'Best'}
+#gameIntro{
+	width: 450px;
+	height: 50px;
+}
+#describe{
+	float:left;
+	line-height: 25px;
+}
+#restart{
+	width: 110px;height: 40px;
+	background-color: #8f7a66;
+	color:#fff;
+	cursor: pointer;
+	border-radius: 3px;
+	text-align: center;
+	line-height: 40px;
+	float: right;
+}
+
+#table2048{
+	box-sizing: border-box;
+	width: 450px;
+	height: 450px;
+	position: absolute;
+	bottom: 0;
+	background-color: rgb(187,173,160);
+	border-radius: 10px;
+	padding:3.5px;
+
+}
+.table2048::after{
+	content: 'Game Over';
+	position:absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	left:0;
+	top: 0;
+	border-radius: 10px;
+	background: rgba(143,122,102,.6);
+	line-height: 450px;
+	text-align: center;
+	font-size: 40px;
+	font-weight: 600;
+	color: #fff
+}
+.item{
+	list-style: none;
+	float:left;
+	width: 90px;
+	height: 90px;
+	margin:20px 0 0 20px;
+	border-radius: 5px;
+	background-color: #CDC1B4;
+	font-size: 45px;
+	text-align: center;
+	line-height: 90px;
+	position: absolute;
+	color: #000;
+}
