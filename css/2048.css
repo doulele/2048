@@ -1,121 +1,170 @@
 a{
-	text-decoration: none;
+  text-decoration: none;
 }
 #my2048{
-	width: 450px;
-	height: 600px;
-	position: relative;
-	left: 50%;
-	transform: translateX(-50%);
-	font-family: clear sans,helvetica neue,Arial,sans-serif;
-	color: #776E65;
+  width: 89vw;
+  height: 119.108vw;
+  max-width: 450px;
+  max-height: 600px;
+  margin:0 auto;
+  font-family: clear sans,helvetica neue,Arial,sans-serif;
+  color: #776E65;
+  font-size: 14px;
+}
+#myhead{
+  width: 100%;
+  height: 29.773vw;
+  max-height: 150px;
+  float: left;
+  box-sizing: border-box;
+}
+#headtop{
+  width: 100%;
+  height: 14.886vw;
+  max-height: 75px;
+  position: relative;
 }
 #title2048{
-	float: left;
-	font-size: 78px;
-	color: #776E65;
+  font-size: 5.375em;
+  line-height: 1em;
+  font-weight: 600;
+  color: #776E65;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 #headScore{
-	margin-left: 50px;
-	float: right;
-	margin-top: 19px;
+  max-height: 55px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 #headScore>div{
-	width: 97px;
-	height: 55px;
-	border-radius: 3px;
-	background-color: #BBADA0;
-	float:left;
-	margin-left: 10px;
-	position: relative;
-	text-align: center;
-	line-height: 76px;
-	color: #fff;
-	font-size:25px;
+  width: 19.255vw;
+  height: 10.918vw;
+  max-width: 97px;
+  max-height: 55px;
+  font-size: 1.785em;
+  line-height: 80px;
+  display: inline-block;
+  border-radius: 3px;
+  background-color: #BBADA0;
+  margin-left: 2vw;
+  position: relative;
+  text-align: center;
+  color: #fff;
 }
 #headScore>div::after{
-	position: absolute;
-	width: 100%;
-	top: 7px;
-	left: 0px;
-	font-size: 16px;
-	color: #eee4da;
-	text-align: center;
-	line-height: 15px;
+  position: absolute;
+  width: 100%;
+  top: 7px;
+  left: 0px;
+  font-size: 0.64em;
+  line-height: 1em;
+  color: #eee4da;
+  text-align: center;
 }
 #nowScore::after{
-	content: 'Score';
-}
-#nowScore::before{
-	content: '+4';
-	width: 100%;
-	font-size: 25px;
-	font-weight: 700;
-	color: rgba(128,119,109,.9);
-	position: absolute;
-	text-align: center;
-	left: 0px;
-	transition: 1 ease top;
-	display: none;
+  content: 'Score';
 }
 #bestScore::after{content:'Best'}
 #gameIntro{
-	width: 450px;
-	height: 50px;
+  width: 100%;
+  float: left;
+  margin-top: 20px;
 }
 #describe{
-	float:left;
-	line-height: 25px;
+  float:left;
+  line-height: 1.785em;
 }
 #restart{
-	width: 110px;height: 40px;
-	background-color: #8f7a66;
-	color:#fff;
-	cursor: pointer;
-	border-radius: 3px;
-	text-align: center;
-	line-height: 40px;
-	float: right;
+  width: 21.836vw;
+  height: 7.939vw;
+  max-width: 110px;
+  max-height: 40px;
+  background-color: #8f7a66;
+  color:#fff;
+  cursor: pointer;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 40px;
+  float: right;
 }
-
 #table2048{
-	box-sizing: border-box;
-	width: 450px;
-	height: 450px;
-	position: absolute;
-	bottom: 0;
-	background-color: rgb(187,173,160);
-	border-radius: 10px;
-	padding:3.5px;
-
+  width: 100%;
+  height: 89vw;
+  max-width: 450px;
+  max-height: 450px;
+  float: left;
+  position: relative;
+  bottom: 0;
+  background-color: rgb(187,173,160);
+  border-radius: 10px;
+  box-sizing: border-box;
 }
 .table2048::after{
-	content: 'Game Over';
-	position:absolute;
-	display: block;
-	width: 100%;
-	height: 100%;
-	left:0;
-	top: 0;
-	border-radius: 10px;
-	background: rgba(143,122,102,.6);
-	line-height: 450px;
-	text-align: center;
-	font-size: 40px;
-	font-weight: 600;
-	color: #fff
+  content: 'Game Over';
+  position:absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  left:0;
+  top: 0;
+  border-radius: 10px;
+  background: rgba(143,122,102,.6);
+  line-height: 450px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  color: #fff
+}
+#tablebox{
+  position: relative;
 }
 .item{
-	list-style: none;
-	float:left;
-	width: 90px;
-	height: 90px;
-	margin:20px 0 0 20px;
-	border-radius: 5px;
-	background-color: #CDC1B4;
-	font-size: 45px;
-	text-align: center;
-	line-height: 90px;
-	position: absolute;
-	color: #000;
+  list-style: none;
+  width: 17.866vw;
+  height: 17.866vw;
+  max-width: 90px;
+  max-height: 90px;
+  color: #000;
+  font-size: 3.214em;
+  text-align: center;
+  line-height: 90px;
+  background-color: #CDC1B4;
+  position: absolute;
+  border-radius: 5px;
+  float: left;
+  box-sizing: content-box;
+}
+
+@media (max-width: 480px) {
+  #my2048{
+    font-size:9px;
+  }
+  #gameIntro{
+    margin-top: 15px!important;
+  }
+  #headScore>div{
+    line-height: 15.9vw;
+  }
+  #restart{
+    line-height: 7.939vw;
+  }
+  .item{
+    line-height: 17.866vw;
+  }
+}
+@media (max-width: 320px) {
+  #my2048{
+    width: 87.5vw;
+  }
+  #table2048{
+    height: 87.5vw;
+  }
+  #gameIntro{
+   margin-top: 10px;
+  }
 }
