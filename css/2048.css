@@ -10,6 +10,10 @@ a{
   font-family: clear sans,helvetica neue,Arial,sans-serif;
   color: #776E65;
   font-size: 14px;
+  -moz-user-select:none;/*火狐*/
+  -webkit-user-select:none;/*webkit浏览器*/
+  -ms-user-select:none;/*IE10*/
+  user-select:none;
 }
 #myhead{
   width: 100%;
@@ -152,6 +156,9 @@ a{
   }
   #restart{
     line-height: 7.939vw;
+  }
+  .table2048::after{
+    line-height: 89vw;
   }
   .item{
     line-height: 17.866vw;
